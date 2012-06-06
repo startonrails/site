@@ -17,3 +17,6 @@ pickle-email-*.html
 Gemfile.lock
 *~
 .rvmrc
+*.swp
+*.swo
+config/database.yml
