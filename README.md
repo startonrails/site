@@ -17,12 +17,12 @@ Features
 
 1. blog
 2. post
-2.1 published true
-2.2 comentário
-2.4 moderate true
-3 User page
-3.1 authentication authlogic / devise
-3.2 authorization cancan
-4 Page list participants StartOnRails
-5 Social networking links
-6 Contact Page
+3. - published true
+4. - comentário
+5. - moderate true
+6. User page
+7. - authentication authlogic / devise
+8. - authorization cancan
+9. Page list participants StartOnRails
+10. Social networking links
+11. Contact Page
