@@ -12,15 +12,17 @@ Books
 4. Pragmatic: The Rails View
 5. Pragmatic: Rails Recipes Rails 3
 
-blog
-	post
-		published true
-	comentário
-		moderate true
-	User page
-		authentication authlogic / devise
-		authorization cancan
-	Page list participants StartOnRails
-	Social networking links
-	Contact Page
+Features
+--------
 
+1. blog
+2. post
+2.1 published true
+2.2 comentário
+2.4 moderate true
+3 User page
+3.1 authentication authlogic / devise
+3.2 authorization cancan
+4 Page list participants StartOnRails
+5 Social networking links
+6 Contact Page
