@@ -37,4 +37,7 @@ or more startonrails' events will receive the first badge named Scaffold Man. Fo
 8 times will receive the Alpha Tester badge and if you mastered all the concepts exposed in the staronrails event 
 and participated more than 10 times you'll receive the honorous Rails Master title and will be invited to be a 
 monitor in the next events. The Rails Mentor badge will be given to monitors that participated once. Finally, if 
-you participated monitoring the starters for more than 10 events, you'll receive the Rails Prophet badge.    
+you participated monitoring the starters for more than 10 events, you'll receive the Rails Prophet badge.
+
+Just one more thing, there'll be extra badges according to the project done. The first one will be the StartOnRails
+Website Developer for who participated of the startonrails website development. 
