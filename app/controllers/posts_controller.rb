@@ -46,9 +46,9 @@ class PostsController < ApplicationController
   # PUT /posts/1.json
   def update
     @post = get_register(params[:id])
-    
+
    if @post.update_attributes(params[:post])
-   		flash[:notice] = 'Post was successfully updated.' 
+   		flash[:notice] = 'Post was successfully updated.'
    		respond_with @post
    else
    		redirect_to :edit
@@ -62,9 +62,9 @@ class PostsController < ApplicationController
     @post.destroy
 	respond_with @post
   end
-  
-  private 
-  	def get_register(id)
-		Post.find(id)
-  	end
+
+  private
+  def get_register(id)
+    Post.find(id)
+  end
 end
