@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
-	respond_to :html, :json
+  respond_to :html, :json
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.available
 
- 	respond_with @posts
+    respond_with @posts
   end
 
   # GET /posts/1
@@ -33,26 +33,16 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-
-	if @post.save
-		flash[:notice] = 'Post was successfully created.'
-		respond_with @post
-	else
-		redirect_to :new
-	end
+    flash[:notice] = 'Post was successfully created.' if @post.save
+    respond_with @post
   end
 
   # PUT /posts/1
   # PUT /posts/1.json
   def update
     @post = get_register(params[:id])
-    
-   if @post.update_attributes(params[:post])
-   		flash[:notice] = 'Post was successfully updated.' 
-   		respond_with @post
-   else
-   		redirect_to :edit
-    end
+    flash[:notice] = 'Post was successfully updated.' if @post.update_attributes(params[:post])
+    respond_with @post
   end
 
   # DELETE /posts/1
@@ -62,9 +52,9 @@ class PostsController < ApplicationController
     @post.destroy
 	respond_with @post
   end
-  
-  private 
-  	def get_register(id)
-		Post.find(id)
-  	end
+
+  private
+  def get_register(id)
+    Post.find(id)
+  end
 end

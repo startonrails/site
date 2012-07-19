@@ -1,0 +1,28 @@
+<h1>Start On Rails</h1>
+<div class="posts">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2><%= post.title %> </h2>
+      <p><%= post.description %> </h2>
+    </div>
+    <% if post.moderated %>
+    <div class="comment">
+      <h3><%= t(:add_comment)%></h3>
+      <%= form_for(@comment) do |f| %>
+        <p><%= f.label t(:name)%></p>
+        <p><%= f.text_field :name%></p>
+
+        <p><%= f.label t(:email) %></p>
+        <p><%= f.text_field :email %></p>
+
+        <p><%= f.label t(:description)%></p>
+        <p><%= f.text_area :description %> </p>
+
+        <%= f.hidden_field :post_id, :value => post.id %>
+
+        <p><%= f.submit %></p>
+      <% end%>
+    </div>
+    <% end %>
+  <% end %>
+</div>
