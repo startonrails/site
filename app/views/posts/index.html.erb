@@ -5,6 +5,7 @@
     <th><%= t :title %></th>
     <th><%= t :description %></th>
     <th><%= t :published  %></th>
+    <th<%= t :moderated %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +16,7 @@
     <td><%= post.title %></td>
     <td><%= post.description %></td>
     <td><%= post.published %></td>
+    <td><%= post.moderated %></td>
     <td><%= link_to t(:show), post %></td>
     <td><%= link_to t(:edit), edit_post_path(post) %></td>
     <td><%= link_to t(:destroy), post, confirm: t(:are_you_sure), method: :delete %></td>
