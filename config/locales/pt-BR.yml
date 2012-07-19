@@ -216,12 +216,12 @@ pt-BR:
   new_post: 'Novo Post'
   back: 'Voltar'
   editing_posts: 'Editando Posts'
-  add_a_comment: 'Adicionar Comentário'
+  add_comment: 'Adicionar Comentário'
   new_comment: 'Novo Comentário'
   email: 'E-mail'
   moderated: 'Moderado'
   name: 'Nome'
   published_at: 'Publicado em'
   comment: 'Comentário'
-  
+
 

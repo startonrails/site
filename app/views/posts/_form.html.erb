@@ -12,16 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label t (:title) %><br />
+    <%= f.label t(:title) %><br />
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label t (:description) %><br />
+    <%= f.label t(:description) %><br />
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label t (:published) %><br />
-    <%= f.check_box :published %>
+    <%= f.label t(:published) %><br />
+    <%= f.check_box :published%>
+  </div>
+  <div class="field">
+    <%= f.label t(:moderated) %><br />
+    <%= f.check_box :moderated %>
   </div>
   <div class="actions">
     <%= f.submit %>
