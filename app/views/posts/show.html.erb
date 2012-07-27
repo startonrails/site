@@ -15,46 +15,11 @@
   <%= @post.published %>
 </p>
 
-<h2><%= t :comment %> </h2>
+<p>
+<b><%= t :moderated %></b>
+  <%= @post.moderated %>
+</p>
 
-<%= @post.comments.each do |comment| %>
-  <p>
-    <b> <%= t :name %></b>
-      <%= comment.name %>
-  </p>
-  
-  <p>
-    <b> <%= t :comment %></b>
-      <%= comment.description %>
-  </p>
-  <p>
-    <b> <%= t :published_at %> </b>
-     <%= comment.published_at %>
-  </p>
-
-<% end %> 
-
-<h2><%= t (:add_a_comment) %></h2>
-<%= form_for([@post, @post.comments.build]) do |f| %>
-
-  <div class="field">
-    <%= f.label t (:name) %></br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label t (:email) %></br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label t (:description) %></br>
-    <%= f.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div> 
-  <% end %>
-  </br>
 <%= link_to t(:edit), edit_post_path(@post) %> |
 <%= link_to t(:back), posts_path %>
 
