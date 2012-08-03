@@ -23,14 +23,8 @@ describe Comment do
   end
 
   context "validate e-mail format" do
-    it{should validate_format_of(:email).with("start@startonrails.com").with_message(:invalid)}
-    it{should validate_format_of(:email).not_with("starttigaragatiga.com").with_message(:invalid)}
-
-  end
-
-  require File.expand_path('spec/spec_helper')
-
-  describe "Should not be without name" do
+    it{should allow_value("start@startonrails.com").for(:email)}
+    it{should_not allow_value("starttigaragatiga.com").for(:email)}
 
   end
 

@@ -2,17 +2,17 @@
 
 FactoryGirl.define do
 
-  #sequence :title { |n| "title#{n}" }
-
-#  FactoryGirl.define :title do |n|
-#    n.title {Factory.next(:title)}
-#  end
-
   factory :post do
     title "Title"
     description "Minha descrição"
     published true
   end
 
-
+  factory :user do
+    name "Homer Simpson"
+    email "homer@simpsons.com"
+    login "homersimpson"
+    password "simpsons"
+    password_confirmation "simpsons"
+  end
 end
