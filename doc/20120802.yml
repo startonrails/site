@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120802:
+    description: "Foi visto colocação de layout com o zscaffold_admin, autenticação com Devise e teste de modelo."
+    monitors: ["Vagner Zampieri - @vagnerzampieri"]
+    participants: ["Ivan Joaquim - @pichotweb", "Vivi Sousa - @vivocah", "Fernando Oliveira - @fernando_comf", "Henrique Jardim - @henriquejardim", "Diógenes Freire - @dio_freire"]

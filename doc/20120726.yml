@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120702:
+    description: "Foram feitos teste de modelo."
+    monitors: ["Vagner Zampieri - @vagnerzampieri"]
+    participants: ["Ivan Joaquim - @pichotweb", "Fernando Oliveira - @fernando_comf", "Henrique Jardim - @henriquejardim", "Diógenes Freire - @dio_freire"]

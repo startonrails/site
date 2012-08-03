@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120718:
+    description: "Mexemos com internacionalização e criamos comment para o post"
+    monitors: ["Vagner Zampieri - @vagnerzampieri", "Vinícius Rodrigues - @vini_rodr90"]
+    participants: ["Jeferson Calazans - @calazans10", "Ivan Joaquim - @pichotweb", "Diego Collares - @senhordim", "Vivi Sousa - @vivocah"]
