@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120810:
+    description: "Adicionando a gem ZScaffold Admin e botão de ativo com ajax."
+    monitors: ["Vagner Zampieri - @vagnerzampieri", "Vinícius Rodrigues - @vini_rodr90"]
+    participants: ["Ivan Joaquim - @pichotweb", "Fernando Oliveira - @fernando_comf", "Henrique Jardim - @henriquejardim"]
