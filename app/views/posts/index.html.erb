@@ -1,29 +1,25 @@
-<h1><%= t :listing_posts %></h1>
+<%= javascript_include_tag "posts" %>
 
-<table>
+<div class="page-header">
+  <h2><%= I18n.t :listing_posts %> - <%= link_to I18n.t(:new_post), new_post_path, class: 'btn btn-success' %></h2>
+</div>
+
+<table class="table table-bordered table-striped">
   <tr>
     <th><%= t :title %></th>
     <th><%= t :description %></th>
     <th><%= t :published  %></th>
-    <th<%= t :moderated %></th>
+    <th><%= t :moderated %></th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.description %></td>
-    <td><%= post.published %></td>
-    <td><%= post.moderated %></td>
-    <td><%= link_to t(:show), post %></td>
-    <td><%= link_to t(:edit), edit_post_path(post) %></td>
-    <td><%= link_to t(:destroy), post, confirm: t(:are_you_sure), method: :delete %></td>
-  </tr>
+  <%= render post %>
 <% end %>
 </table>
-
+<%= will_paginate @posts, previous_label: I18n.t(:previous), next_label: I18n.t(:next) %>
 <br />
 
-<%= link_to t(:new_post), new_post_path %>
+<%= link_to t(:new_post), new_post_path, class: 'btn btn-success' %>

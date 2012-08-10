@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
-  respond_to :html, :json
+  layout "admin"
+  respond_to :html, :json, :js
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.available
+    @posts = Post.paginate(page: params[:page], per_page: 10)
 
     respond_with @posts
   end
@@ -50,7 +51,14 @@ class PostsController < ApplicationController
   def destroy
     @post = get_register(params[:id])
     @post.destroy
-	respond_with @post
+    respond_with @post
+  end
+
+  def publish
+    @post = Post.find(params[:id])
+    @post.published = (@post.published) ? false : true
+    @post.save
+    respond_with @post
   end
 
   private

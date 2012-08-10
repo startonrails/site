@@ -223,5 +223,6 @@ pt-BR:
   name: 'Nome'
   published_at: 'Publicado em'
   comment: 'Comentário'
-
+  previous: "Anterior"
+  next: "Próximo"
 
