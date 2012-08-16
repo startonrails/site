@@ -16,7 +16,15 @@
   </tr>
 
 <% @posts.each do |post| %>
-  <%= render post %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.description %></td>
+    <td id="post_publish_<%= post.id %>"><%= link_to_function show_icon(post.published), "publish(#{post.id});" %></td>
+    <td><%= show_icon(post.moderated) %></td>
+    <td><%= link_to t(:show), post, class: 'btn'  %></td>
+    <td><%= link_to t(:edit), edit_post_path(post), class: 'btn btn-primary' %></td>
+    <td><%= link_to t(:destroy), post_path(post.id), :confirm => "Are you sure?"     , :method => :delete, :class => 'btn btn-danger' %></td>
+  </tr>
 <% end %>
 </table>
 <%= will_paginate @posts, previous_label: I18n.t(:previous), next_label: I18n.t(:next) %>
