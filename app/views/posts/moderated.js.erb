@@ -1,0 +1,3 @@
+var path = '/moderated';
+$("#post_moderated_<%= @post.id%>").empty();
+$("#post_moderated_<%= @post.id%>").append('<%= link_to_function show_icon(@post.moderated), "active(#{@post.id}, path);"%>');

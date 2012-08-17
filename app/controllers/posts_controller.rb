@@ -56,8 +56,15 @@ class PostsController < ApplicationController
   end
 
   def publish
-    @post = Post.find(params[:id])
+    @post = get_register(params[:id])
     @post.published = (@post.published) ? false : true
+    @post.save
+    respond_with @post
+  end
+
+  def moderated
+    @post = get_register(params[:id])
+    @post.moderated = (@post.moderated) ? false : true
     @post.save
     respond_with @post
   end

@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe Post do
-  subject {Post.new}
-
   it {should respond_to(:description)}
   it {should respond_to(:title)}
   it {should respond_to(:published)}
@@ -10,6 +8,6 @@ describe Post do
 
   it {should have_many(:comments)}
 
-  it{should validate_presence_of(:title)}
-  it{should validate_presence_of(:description)}
+  it {should validate_presence_of(:title)}
+  it {should validate_presence_of(:description)}
 end

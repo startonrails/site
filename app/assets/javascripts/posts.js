@@ -1,6 +1,6 @@
-function publish(id){
+function active(id, path){
   $.ajax({
-    url: '/posts/publish',
+    url: '/posts' + path,
     type: 'put',
     data: {id: id},
     dataType: 'script'

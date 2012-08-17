@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe Comment do
-  subject {Comment.new}
   context "should respond_to" do
     it{should respond_to(:description)}
     it{should respond_to(:email)}

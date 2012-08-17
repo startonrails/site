@@ -4,6 +4,7 @@ Startonrails::Application.routes.draw do
   resources :posts do
     collection do
       put :publish
+      put :moderated
     end
   end
   resources :comments
