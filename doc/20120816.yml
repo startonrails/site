@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120816:
+    description: "Foi visto colocação de layout com o zscaffold_admin, teste de modelo, ajax e helper."
+    monitors: ["Vagner Zampieri - @vagnerzampieri"]
+    participants: ["Vivi Sousa - @vivocah"]
