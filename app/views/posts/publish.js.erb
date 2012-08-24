@@ -1,2 +1,3 @@
+var path = '/publish';
 $("#post_publish_<%= @post.id %>").empty();
-$("#post_publish_<%= @post.id %>").append('<%= link_to_function show_icon(@post.published), "publish(#{@post.id});" %>');
+$("#post_publish_<%= @post.id %>").append('<%= link_to_function show_icon(@post.published), "active(#{@post.id}, path);" %>');

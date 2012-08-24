@@ -24,7 +24,9 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to 'Login', 'javascript: void();', class: 'brand-right' %>
+          <% unless current_user.nil? %>
+            <div class="brand-right"><%= current_user.email %> <%= link_to I18n.t(:logout), destroy_user_session_path, method: :delete, class: 'btn btn-danger' %></div>
+          <% end %>
         </div>
       </div>
     </div>

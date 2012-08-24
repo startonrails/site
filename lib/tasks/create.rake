@@ -8,4 +8,11 @@ namespace :create do
       Post.create(title: "Post#{t}", description: "Post", published: true, moderated: true)
     end
   end
+
+  desc "Create Roles"
+  task :role => :environment do
+    %w[MUGGLE, EDITOR, ADMIN].each do |name|
+      Role.create(name: name)
+    end
+  end
 end

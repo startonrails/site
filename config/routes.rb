@@ -7,6 +7,7 @@ Startonrails::Application.routes.draw do
       put :moderated
     end
   end
+
   resources :comments
   root :to => 'home#index'
 end

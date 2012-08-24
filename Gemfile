@@ -13,6 +13,7 @@ gem 'therubyracer'
 gem 'devise'
 gem 'zscaffold_admin'
 gem "will_paginate"
+gem "cancan"
 
 # Gems used only for assets and not required
 # in production environments by default.

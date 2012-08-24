@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  #before_filter :authenticate_user!
+  before_filter :authenticate_user!
   layout "admin"
   respond_to :html, :json, :js
   # GET /posts
