@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120823:
+    description: "Ajax, autenticação e autorização com o Devise."
+    monitors: ["Vagner Zampieri - @vagnerzampieri", "Vinícius Rodrigues - @vini_rodr90"]
+    participants: ["Henrique Jardim - @henriquejardim", "Vivi Sousa - @vivocah"]
