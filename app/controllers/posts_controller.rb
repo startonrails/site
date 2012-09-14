@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
 
     respond_with @post
   end
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
    end
 
   # POST /posts
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
     flash[:notice] = 'Post was successfully updated.' if @post.update_attributes(params[:post])
     respond_with @post
   end
@@ -50,27 +50,22 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
     @post.destroy
     respond_with @post
   end
 
   def publish
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
     @post.published = (@post.published) ? false : true
     @post.save
     respond_with @post
   end
 
   def moderated
-    @post = get_register(params[:id])
+    @post = Post.find(params[:id])
     @post.moderated = (@post.moderated) ? false : true
     @post.save
     respond_with @post
-  end
-
-  private
-  def get_register(id)
-    Post.find(id)
   end
 end
