@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120913:
+    description: "Git, bootstrap, como funciona o Rails, auditoria, ..."
+    monitors: ["Vagner Zampieri - @vagnerzampieri", "Fernando Kosh - @fernandokosh", "Anna Cruz - @yuizinha", "Luciano Sousa - @lucianosousa", "Rafael Tauil - @tauil"]
+    participants: ["Desiree - @desisant", "Vivi Sousa - @vivocah", "Leonardo Andrade - @_landrade_", "Leonardo Costa - @leoccosta", "Rodrigo Gomes", "Mariana Sommerlatte"]
