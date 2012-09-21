@@ -1,0 +1,15 @@
+<div class="page-header">
+  <h2><%= I18n.t :listing_comments %></h2>
+</div>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th><%= t :name %></th>
+    <th><%= t :description %></th>
+    <th><%= t :published  %></th>
+    <th><%= t :status	 %></th>
+    <th><%= t :email %></th>
+    <th></th>
+  </tr>
+
+  

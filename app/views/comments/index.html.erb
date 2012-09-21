@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h2><%= I18n.t :listing_comments %></h2>
+</div>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <th><%= t :name %></th>
+    <th><%= t :email %></th>
+    <th><%= t :description %></th>
+    <!--<th><%#= t :published  %></th>-->		
+    <th><%= t :status %></th>
+  </tr>
+<% @comments.each do |comment| %>
+	<tr>
+		<td><%= comment.name%></td>
+		<td><%= comment.description %></td>
+		<td><%= comment.email%></td>
+		<!--<td id="comment_publish_<%#= comment.id %>"> <%#= link_to_function show_icon(comment.published), "active(#{comment.id}, '/publish');" %></td>-->
+    	<td><%= comment.status%></td>							
+    </tr>
+	<% end 	%>		
+	</table>
