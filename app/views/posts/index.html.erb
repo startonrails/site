@@ -1,5 +1,4 @@
-<%= javascript_include_tag "posts" %>
-
+<%= render partial: 'posts' %>
 <div class="page-header">
   <h2><%= I18n.t :listing_posts %> - <%= link_to I18n.t(:new_post), new_post_path, class: 'btn btn-success' %></h2>
 </div>

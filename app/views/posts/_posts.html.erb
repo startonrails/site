@@ -1,0 +1,11 @@
+<script type ='text/javascript'>
+function active(id, path){
+  $.ajax({
+    url: '/posts' + path,
+    type: 'put',
+    data: {id: id},
+    dataType: 'script',
+    headers: { 'X-CSRF-Token': '<%= form_authenticity_token.to_s %>'}
+  });
+}
+</script>
