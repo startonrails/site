@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120920:
+    description: "Autenticação, ajax, autorização, rota, validação, RVM e criação da aplicação"
+    monitors: ["Vagner Zampieri - @vagnerzampieri", "Fernando Kosh - @fernandokosh", "Ivan Joaquim - @pichotweb"]
+    participants: ["Desiree - @desisant", "Vivi Sousa - @vivocah", "Rodrigo Gomes - @souzagomes1989", "Douglas Marx - @douglasmarx22"]
