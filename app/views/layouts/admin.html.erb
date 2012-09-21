@@ -37,9 +37,10 @@
       <header class="jumbotron subhead" id="overview">
         <div class="subnav">
           <ul class="nav nav-pills">
-            <li><a href="javascript: void();">Home</a></li>
-            <li><a href="javascript: void();">Usuários</a></li>
-          </ul>
+            <li><%= link_to t(:home), root_path %></li>
+            <li><%= link_to t(:posts), posts_path %></li>
+            <li><%= link_to t(:comments), comments_path %></li>
+              </ul>
         </div>
       </header>
 
