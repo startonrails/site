@@ -1,0 +1,10 @@
+<div class="row"> 
+	<div class="post span4">
+	  <h3><%= @post.title %> </h3>
+	  <p><%= @post.description %> </p>
+	</div>
+</div>
+<div class="comments well">
+  <%= comments(@post) %> 
+</div>
+<%= render "comments/form", post: @post %>

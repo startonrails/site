@@ -26,4 +26,13 @@ module ApplicationHelper
     image_tag "#{val}.png"
   end
 
+  def comments(post)
+    html = ""
+    post.comments.each do |comment|
+      html << "<p>#{comment.name}</p>"
+      html << "<p>#{comment.email}</p>"
+      html << "<p>#{comment.description}</p>"
+    end
+    raw html
+  end
 end

@@ -1,0 +1,15 @@
+<div class="comment well">
+  <h3><%= t(:add_comment)%></h3>
+  <%= form_for([@post, @comment]) do |f| %>
+    <p><%= f.label t(:name)%></p>
+    <p><%= f.text_field :name%></p>
+
+    <p><%= f.label t(:email) %></p>
+    <p><%= f.text_field :email %></p>
+
+    <p><%= f.label t(:description)%></p>
+    <p><%= f.text_area :description %> </p>
+
+    <p><%= f.submit %></p>
+  <% end %>
+</div>
