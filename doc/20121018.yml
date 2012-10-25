@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20120920:
+    description: "Instalação RVM, Ruby, Rails. Visão geral de Git + Chave SSH. Blog de 15 minutos feito pelo @IgoMelo."
+    monitors: [ "Fernando Kosh - @fernandokosh", "Vagner Zampieri - @vagnerzampieri" ]
+    participants: [ "Igo Rodrigues - @IgoMelo", "Rodrigo Gomes - @souzagomes1989", "Vivi Sousa - @vivocah" ]
