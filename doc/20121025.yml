@@ -1,0 +1,6 @@
+# encoding: UTF-8
+startonrails:
+  20121025:
+    description: "Instalação RVM, Ruby, Rails. Chave SSH."
+    monitors: [ "Fernando Kosh - @fernandokosh" ]
+    participants: [ "Luiz Felipe Vasconcellos - vasconcelloslf@gmail.com", "Douglas Marx - @douglasmarx22 (Remoto)", "Rodrigo Gomes - @souzagomes1989", "Julio Cesar Gomes - @jcpgomes" ]
